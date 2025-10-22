@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portal Fulan — Berita Koding Lucu Tapi Keren 😎💻</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f2f4f7;
+      color: #222;
+    }
+
+    header {
+      background-color: #2e4a7b;
+      color: white;
+      text-align: center;
+      padding: 12px 0;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    header p {
+      margin: 5px 0;
+      font-style: italic;
+      font-size: 13px;
+    }
+
+    nav {
+      background-color: #3e6aa0;
+      text-align: center;
+      padding: 6px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      margin: 0 10px;
+    }
+
+    /* --- Layout Container --- */
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 1100px;
+      gap: 20px;
+    }
+
+    .content {
+      flex: 3;
+      background-color: white;
+      border: 1px solid #cdd7e2;
+      border-radius: 6px;
+      padding: 20px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .content h2 {
+      color: #144a91;
+      font-size: 18px;
+      margin-top: 0;
+    }
+
+    .content img {
+      width: 100%;
+      border-radius: 6px;
+      margin: 10px 0;
+    }
+
+    .sidebar {
+      flex: 1.2;
+      background-color: #e9f2fb;
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 14px;
+      margin-top: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 10px;
+      height: fit-content;
+    }
+
+    .sidebar h3 {
+      color: #144a91;
+      font-size: 15px;
+      margin-top: 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      margin: 10px 0;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 6px;
+    }
+
+    th {
+      background-color: #f7f7f7;
+    }
+
+    .sidebar table tr:hover {
+      background-color: #dfefff;
+      transition: 0.2s;
+    }
+
+    ul, ol {
+      margin-top: 5px;
+    }
+
+    footer {
+      background-color: #2e4a7b;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 13px;
+      margin-top: 20px;
+    }
+
+    footer a {
+      color: #c2d9ff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsif untuk HP / tablet */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .content, .sidebar {
+        width: 100%;
+      }
+
+      .sidebar {
+        order: 2;
+      }
+
+      .content {
+        order: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portal Fulan — Berita Koding Lucu Tapi Keren 😎💻</h1>
+    <p>"Di mana bug bukan masalah, tapi guru kehidupan."</p>
+  </header>
+
+  <nav>
+    <a href="#">Berita Utama</a> |
+    <a href="#">Fakta Unik</a> |
+    <a href="#">Video & Humor</a> |
+    <a href="#">Kontak Redaksi</a>
+  </nav>
+
+  <div class="container">
+    <div class="content">
+      <h2>Fulan Tertangkap Basah Ngoding Jam 3 Pagi Demi Push ke GitHub</h2>
+      <img src="https://exampllee.vercel.app/assets/G07.gif" alt="Ngoding tengah malam">
+
+      <p><strong>Jakarta, Portal Fulan</strong> — Warga sekitar dikejutkan dengan suara ketikan keyboard yang tak kunjung berhenti. Setelah diselidiki, ternyata sumber bising berasal dari kamar Fulan yang sedang commit dan deploy project-nya ke GitHub.</p>
+
+      <p>"Aku cuma mau push repo-nya sebelum tidur," ujar Fulan sambil menyeruput kopi dingin yang sudah cair dari jam 10 malam.</p>
+
+      <h3>Fakta Koding Fulan:</h3>
+      <ul>
+        <li>Suka debugging sambil dengerin musik anime 🎧</li>
+        <li>Pernah push tanpa commit 😭</li>
+        <li>Sering error "dangkal" yang cuma butuh restart 😅</li>
+      </ul>
+
+      <h3>Top 3 Error Paling Sering Ditemui</h3>
+      <ol>
+        <li>Missing semicolon di variabel jam 2 pagi</li>
+        <li>Nama input gak kebaca di deploy</li>
+        <li>"Cannot read property of undefined" — klasik!</li>
+      </ol>
+
+      <h3>Daftar Konsumsi Lembur Fulan</h3>
+      <table>
+        <tr><th>No</th><th>Menu</th><th>Jam Konsumsi</th><th>Status</th></tr>
+        <tr><td>1</td><td>Kopi Tubruk</td><td>22:00</td><td>Habis</td></tr>
+        <tr><td>2</td><td>Mie Goreng Instan</td><td>00:30</td><td>Pending (nugas error)</td></tr>
+        <tr><td>3</td><td>Roti Sobek</td><td>01:00</td><td>Belum disentuh</td></tr>
+      </table>
+
+      <p><em>"Kalo koding gagal, bukan berarti karir gagal. Mungkin cuma belum di-save."</em></p>
+
+      <h3>Belajar HTML Langsung dari Sumbernya</h3>
+      <section>
+        <iframe
+          src="https://www.petanikode.com/"
+          width="100%"
+          height="400"
+          style="border:1px solid #ccc; border-radius:8px;"
+          title="Google iframe"
+        ></iframe>
+      </section>
+    </div>
+
+    <aside class="sidebar">
+      <h3>Fakta Unik Tentang Fulan</h3>
+      <ul>
+        <li>Ngoding pakai mode gelap bahkan di siang bolong.</li>
+        <li>Punya 7 repository bernama <em>final-final-v3</em>.</li>
+        <li>Pernah rename folder jadi “fix-beneran-terakhir”.</li>
+      </ul>
+
+      <h4>Jadwal Kegiatan Harian</h4>
+      <table>
+        <tr><th>Waktu</th><th>Kegiatan</th></tr>
+        <tr><td>09:00</td><td>Kelas Pemrograman Web</td></tr>
+        <tr><td>13:00</td><td>Ngopi sambil baca dokumentasi</td></tr>
+        <tr><td>21:00</td><td>Debug sampai lupa waktu</td></tr>
+      </table>
+    </aside>
+  </div>
+
+  <footer>
+    <p>Hubungi redaksi: <a href="mailto:redaksi@portalfulan.id">redaksi@portalfulan.id</a></p>
+    <p><a href="#">⬆ Kembali ke atas</a></p>
+    <p>© 2025 Portal Fulan — Semua bug milik bersama 💻</p>
+  </footer>
+</body>
+</html>
